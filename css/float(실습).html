@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>float(실습)</title>
+  <style>
+    .outline_a{
+      border:1px #f00 solid;
+      width:1024px;
+      height:1000px;
+      margin:0 auto;
+    }
+    #outline_b{
+      border:1px #456 solid;
+      height:100px;
+    }
+    #outline_c{
+      border:1px #789 solid;
+      width:200px;
+      height:400px;
+      float:left;
+    }
+    #outline_d{
+      border:1px #741 solid;
+      margin-left:210px;
+      min-height:700px
+    }
+    #outline_e{
+      border: 1px #f00 solid;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="outline_a">aaa
+    <div id="outline_b">bbb</div>
+    <div id="outline_c">ccc</div>
+    <div id="outline_d">
+      <h2>우리집 회원 가입 양식</h2>
+        <fieldset>
+        <legend>회원 필수입력 사항</legend>
+          <form action="회원가입.html" method="get">
+            <table width="100%">
+              <colgroup>
+                <col width="20%">
+                <col width="80%">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th><label for="name">이름</label></th>
+                  <td><input type="text" id="name" value="" placeholder="이름"></td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                </tr>
+              </tbody>
+
+
+
+
+
+
+
+            </table>
+
+
+
+
+          </form>
+        </fieldset>
+
+    </div>
+    <div id="outline_e">eee</div>
+  </div>
+</body>
+</html>
