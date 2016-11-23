@@ -1,0 +1,72 @@
+// out: ../css/styles.css, sourcemap: false, compress: false
+.border(){
+  border:1px #F00 solid;
+}
+@imgsplit-bg:'http://static.naver.net/newsstand/img/20140716/sp_nwstd.png';
+.bgpos(@x:0,@y:0,@bg){
+  background-position: @x @y;
+  background-image:url(@bg);
+}
+.bkimgsplit_bg{}
+*{
+  padding:0; margin: 0;
+}
+ul,ol{
+  list-style: none;
+}
+.wrap{
+  .border();
+  width:900px;
+  height:540px;
+  margin:0 auto;
+
+
+
+  .top{
+    .border();
+    margin:0 auto;
+    width:840px;
+    height:110px;
+    margin-top: 10px;
+      .logo{
+        float:left;
+        .border();
+      }
+      .banner{
+        float:right;
+        .border();
+      }
+      .btn_list{
+        clear:left;
+        .border();
+        button{
+          height:22px;
+        }
+          .btn_fallow{
+            width:66px;
+            .bgpos(-187px,-199px,@imgsplit-bg)
+
+
+          }
+          .btn_user{
+            width:75px;
+          }
+          .btn_sns{
+            width:28px;
+          }
+      }
+
+
+
+
+  }
+  .bottom{
+    .border();
+    margin-top:10px;
+    width:840px; height:380px;
+    margin:0 auto;
+
+  }
+
+
+}
